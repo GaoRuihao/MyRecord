@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E9C83760A1192AC1A791F17 /* libPods-MyRecord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D92544C17F239D34ED7DB399 /* libPods-MyRecord.a */; };
 		3F62606A21783471008E0F6C /* recordListBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F62606921783471008E0F6C /* recordListBG.png */; };
+		3F62607221788B3E008E0F6C /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62607121788B3E008E0F6C /* CalendarViewController.swift */; };
+		3F626074217890DE008E0F6C /* NavigationController+addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F626073217890DE008E0F6C /* NavigationController+addition.swift */; };
+		3F62607721789595008E0F6C /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62607621789595008E0F6C /* RecordTableViewCell.swift */; };
+		3F6260792178B60A008E0F6C /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6260782178B60A008E0F6C /* TodoListViewController.swift */; };
 		3F94DCD021773FE400227227 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F94DCCF21773FE400227227 /* AppDelegate.swift */; };
 		3F94DCD221773FE400227227 /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F94DCD121773FE400227227 /* RecordListViewController.swift */; };
-		3F94DCD421773FE400227227 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F94DCD321773FE400227227 /* SecondViewController.swift */; };
 		3F94DCD721773FE400227227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F94DCD521773FE400227227 /* Main.storyboard */; };
 		3F94DCD921773FE500227227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F94DCD821773FE500227227 /* Assets.xcassets */; };
 		3F94DCDC21773FE500227227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F94DCDA21773FE500227227 /* LaunchScreen.storyboard */; };
@@ -26,11 +30,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		369CDB68BC000F403E7BFCE1 /* Pods-MyRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyRecord/Pods-MyRecord.debug.xcconfig"; sourceTree = "<group>"; };
 		3F62606921783471008E0F6C /* recordListBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recordListBG.png; sourceTree = "<group>"; };
+		3F62606B217880D6008E0F6C /* MyRecord-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyRecord-Bridging-Header.h"; sourceTree = "<group>"; };
+		3F62607121788B3E008E0F6C /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		3F626073217890DE008E0F6C /* NavigationController+addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationController+addition.swift"; sourceTree = "<group>"; };
+		3F62607621789595008E0F6C /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
+		3F6260782178B60A008E0F6C /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		3F94DCCC21773FE400227227 /* MyRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F94DCCF21773FE400227227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F94DCD121773FE400227227 /* RecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
-		3F94DCD321773FE400227227 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3F94DCD621773FE400227227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F94DCD821773FE500227227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F94DCDB21773FE500227227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +53,8 @@
 		3F94DCF42177461300227227 /* AddRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecordViewController.swift; sourceTree = "<group>"; };
 		3F94DCF62177461A00227227 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3F94DCF82177518C00227227 /* Sources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sources.xcassets; sourceTree = "<group>"; };
+		4ED129F502A9B7E5735BA849 /* Pods-MyRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyRecord/Pods-MyRecord.release.xcconfig"; sourceTree = "<group>"; };
+		D92544C17F239D34ED7DB399 /* libPods-MyRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyRecord.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +62,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E9C83760A1192AC1A791F17 /* libPods-MyRecord.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F62607521789575008E0F6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F62607621789595008E0F6C /* RecordTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3F94DCC321773FE400227227 = {
 			isa = PBXGroup;
 			children = (
 				3F94DCCE21773FE400227227 /* MyRecord */,
 				3F94DCCD21773FE400227227 /* Products */,
+				8B75BF3F17A60D0240AAAC77 /* Pods */,
+				DDE0531C1E58A2930C97311F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,10 +98,7 @@
 		3F94DCCE21773FE400227227 /* MyRecord */ = {
 			isa = PBXGroup;
 			children = (
-				3F94DCD121773FE400227227 /* RecordListViewController.swift */,
-				3F94DCD321773FE400227227 /* SecondViewController.swift */,
-				3F94DCF42177461300227227 /* AddRecordViewController.swift */,
-				3F94DCF62177461A00227227 /* BaseViewController.swift */,
+				3F62607521789575008E0F6C /* View */,
 				3F94DCF3217745F700227227 /* Controller */,
 				3F94DCEC2177459000227227 /* Transition */,
 				3F94DCE82177444700227227 /* Model */,
@@ -91,6 +110,7 @@
 				3F62606921783471008E0F6C /* recordListBG.png */,
 				3F94DCDA21773FE500227227 /* LaunchScreen.storyboard */,
 				3F94DCDD21773FE500227227 /* Info.plist */,
+				3F62606B217880D6008E0F6C /* MyRecord-Bridging-Header.h */,
 			);
 			path = MyRecord;
 			sourceTree = "<group>";
@@ -125,8 +145,31 @@
 		3F94DCF3217745F700227227 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3F94DCD121773FE400227227 /* RecordListViewController.swift */,
+				3F94DCF42177461300227227 /* AddRecordViewController.swift */,
+				3F94DCF62177461A00227227 /* BaseViewController.swift */,
+				3F62607121788B3E008E0F6C /* CalendarViewController.swift */,
+				3F626073217890DE008E0F6C /* NavigationController+addition.swift */,
+				3F6260782178B60A008E0F6C /* TodoListViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B75BF3F17A60D0240AAAC77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				369CDB68BC000F403E7BFCE1 /* Pods-MyRecord.debug.xcconfig */,
+				4ED129F502A9B7E5735BA849 /* Pods-MyRecord.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DDE0531C1E58A2930C97311F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D92544C17F239D34ED7DB399 /* libPods-MyRecord.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F94DCE021773FE500227227 /* Build configuration list for PBXNativeTarget "MyRecord" */;
 			buildPhases = (
+				FE03C0AD2F93008569E77D41 /* [CP] Check Pods Manifest.lock */,
 				3F94DCC821773FE400227227 /* Sources */,
 				3F94DCC921773FE400227227 /* Frameworks */,
 				3F94DCCA21773FE400227227 /* Resources */,
+				3D1F3C00AEAA34979D7A35CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,6 +206,7 @@
 				TargetAttributes = {
 					3F94DCCB21773FE400227227 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -197,17 +243,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D1F3C00AEAA34979D7A35CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyRecord/Pods-MyRecord-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyRecord/Pods-MyRecord-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE03C0AD2F93008569E77D41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyRecord-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F94DCC821773FE400227227 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F94DCD421773FE400227227 /* SecondViewController.swift in Sources */,
+				3F62607221788B3E008E0F6C /* CalendarViewController.swift in Sources */,
+				3F62607721789595008E0F6C /* RecordTableViewCell.swift in Sources */,
 				3F94DCF22177459000227227 /* NormalDismissAnimation.swift in Sources */,
 				3F94DCF72177461A00227227 /* BaseViewController.swift in Sources */,
+				3F626074217890DE008E0F6C /* NavigationController+addition.swift in Sources */,
 				3F94DCD021773FE400227227 /* AppDelegate.swift in Sources */,
 				3F94DCF52177461300227227 /* AddRecordViewController.swift in Sources */,
 				3F94DCE7217743A000227227 /* NotificationCenter.swift in Sources */,
+				3F6260792178B60A008E0F6C /* TodoListViewController.swift in Sources */,
 				3F94DCEA2177445900227227 /* RecordItem.swift in Sources */,
 				3F94DCE52177418800227227 /* UIView+Tool.swift in Sources */,
 				3F94DCF02177459000227227 /* BouncePresentAnimation.swift in Sources */,
@@ -356,8 +444,10 @@
 		};
 		3F94DCE121773FE500227227 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 369CDB68BC000F403E7BFCE1 /* Pods-MyRecord.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K9KT8N67YP;
 				INFOPLIST_FILE = MyRecord/Info.plist;
@@ -368,6 +458,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaorhao.app.MyRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyRecord/MyRecord-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -375,8 +467,10 @@
 		};
 		3F94DCE221773FE500227227 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ED129F502A9B7E5735BA849 /* Pods-MyRecord.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K9KT8N67YP;
 				INFOPLIST_FILE = MyRecord/Info.plist;
@@ -387,6 +481,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaorhao.app.MyRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyRecord/MyRecord-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
