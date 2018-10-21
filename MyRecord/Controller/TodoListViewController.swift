@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class TodoListViewController: UIViewController {
 
@@ -21,13 +22,43 @@ class TodoListViewController: UIViewController {
         doubleTap.numberOfTapsRequired = 2
         doubleTap.numberOfTouchesRequired = 1
         tableView.addGestureRecognizer(doubleTap)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(headerViewDidChanged), name: .headerViewDidShowingNotification, object: nil)
+        
+        let store = RecordStore.shared
+        for _ in 0...10 {
+            let newCount = store.count + 1
+            let title = "Record Item \(newCount)"
+            store.append(item: .init(title: title))
+        }
+        tableView.reloadData()
     }
 
     func buildSubviews() {
+        navigationItem.leftBarButtonItem = nil
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        
         tableView = UITableView(frame: view.bounds, style: .grouped);
         tableView.delegate = self;
         tableView.dataSource = self;
         view.addSubview(tableView);
+        
+        let headerView = EditHeaderView(frame: CGRect(x: 0, y: -100, width: view.width, height: 80))
+        headerView.backgroundColor = UIColor.orange
+        tableView.headerView = headerView
+//        let textField = UITextField(frame: CGRect(x: 0, y: 0, width: headerView.width, height: 70))
+//        textField.delegate = self
+//        headerView.addSubview(textField)
+//        let line = UIView(frame: CGRect(x: 20, y: textField.frame.maxY, width: textField.frame.width, height:  1 / UIScreen.main.scale))
+//        line.backgroundColor = UIColor.black
+//        headerView.addSubview(line)
+        
+//        let bottomView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.width, height: 80))
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
     @objc func buttonClick(_ sender: UIButton) {
@@ -37,6 +68,10 @@ class TodoListViewController: UIViewController {
     
     @objc func doubleTapGesture(_ tap: UITapGestureRecognizer) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    @objc func headerViewDidChanged() {
+        
     }
 
 }
@@ -90,6 +125,20 @@ extension TodoListViewController: UITableViewDelegate, UITableViewDataSource {
         let configuration = UISwipeActionsConfiguration(actions: [unread])
         return configuration
     }
+    
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        if scrollView == tableView {
+//            if scrollView.contentOffset.y < -150 {
+//                AudioServicesPlaySystemSound(1519)
+//                tableView.contentInset = UIEdgeInsets(top: 80, left: 0, bottom: 0, right: 0)
+//                tableView.setContentOffset(CGPoint(x: 0, y: -100), animated: false)
+//            }
+//        }
+//    }
+    
+}
+
+extension TodoListViewController: UITextFieldDelegate {
     
 }
 

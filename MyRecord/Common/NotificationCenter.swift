@@ -19,6 +19,8 @@ extension Notification {
 }
 extension Notification.Name {
     static let recordStoreDidChangedNotification = Notification.Name(rawValue: "com.gaorhao.app.RecordStoreDidChangedNotification")
+    
+    static let headerViewDidShowingNotification = Notification.Name(rawValue: "com.gaorhao.app.headerViewDidShowingNotification")
 }
 extension Notification.UserInfoKey {
     static var recordStoreDidChangedChangeBehaviorKey: Notification.UserInfoKey<RecordStore.ChangeBehavior> {

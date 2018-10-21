@@ -126,6 +126,9 @@ extension RecordListViewController: UITableViewDelegate, UITableViewDataSource {
         let completBtn = UITableViewRowAction.init(style: .default, title: "完成") { (action, indexPath) in
             
         }
+        if let image = UIImage(named: "calendar") {
+            completBtn.backgroundColor = UIColor(patternImage: image)
+        }
         return [completBtn]
     }
     

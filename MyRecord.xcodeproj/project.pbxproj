@@ -13,6 +13,10 @@
 		3F626074217890DE008E0F6C /* NavigationController+addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F626073217890DE008E0F6C /* NavigationController+addition.swift */; };
 		3F62607721789595008E0F6C /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62607621789595008E0F6C /* RecordTableViewCell.swift */; };
 		3F6260792178B60A008E0F6C /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6260782178B60A008E0F6C /* TodoListViewController.swift */; };
+		3F62607B2179BC23008E0F6C /* UIScrollView+Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62607A2179BC23008E0F6C /* UIScrollView+Refresh.swift */; };
+		3F62607D2179BC5A008E0F6C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62607C2179BC5A008E0F6C /* HeaderView.swift */; };
+		3F62607F2179BC65008E0F6C /* FootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F62607E2179BC65008E0F6C /* FootView.swift */; };
+		3F6260812179E262008E0F6C /* EditHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6260802179E262008E0F6C /* EditHeaderView.swift */; };
 		3F94DCD021773FE400227227 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F94DCCF21773FE400227227 /* AppDelegate.swift */; };
 		3F94DCD221773FE400227227 /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F94DCD121773FE400227227 /* RecordListViewController.swift */; };
 		3F94DCD721773FE400227227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F94DCD521773FE400227227 /* Main.storyboard */; };
@@ -37,6 +41,10 @@
 		3F626073217890DE008E0F6C /* NavigationController+addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationController+addition.swift"; sourceTree = "<group>"; };
 		3F62607621789595008E0F6C /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 		3F6260782178B60A008E0F6C /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
+		3F62607A2179BC23008E0F6C /* UIScrollView+Refresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Refresh.swift"; sourceTree = "<group>"; };
+		3F62607C2179BC5A008E0F6C /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		3F62607E2179BC65008E0F6C /* FootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootView.swift; sourceTree = "<group>"; };
+		3F6260802179E262008E0F6C /* EditHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHeaderView.swift; sourceTree = "<group>"; };
 		3F94DCCC21773FE400227227 /* MyRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F94DCCF21773FE400227227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F94DCD121773FE400227227 /* RecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +81,10 @@
 			isa = PBXGroup;
 			children = (
 				3F62607621789595008E0F6C /* RecordTableViewCell.swift */,
+				3F62607A2179BC23008E0F6C /* UIScrollView+Refresh.swift */,
+				3F62607C2179BC5A008E0F6C /* HeaderView.swift */,
+				3F62607E2179BC65008E0F6C /* FootView.swift */,
+				3F6260802179E262008E0F6C /* EditHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -288,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F62607221788B3E008E0F6C /* CalendarViewController.swift in Sources */,
+				3F62607B2179BC23008E0F6C /* UIScrollView+Refresh.swift in Sources */,
 				3F62607721789595008E0F6C /* RecordTableViewCell.swift in Sources */,
 				3F94DCF22177459000227227 /* NormalDismissAnimation.swift in Sources */,
 				3F94DCF72177461A00227227 /* BaseViewController.swift in Sources */,
@@ -299,8 +312,11 @@
 				3F94DCEA2177445900227227 /* RecordItem.swift in Sources */,
 				3F94DCE52177418800227227 /* UIView+Tool.swift in Sources */,
 				3F94DCF02177459000227227 /* BouncePresentAnimation.swift in Sources */,
+				3F62607F2179BC65008E0F6C /* FootView.swift in Sources */,
 				3F94DCD221773FE400227227 /* RecordListViewController.swift in Sources */,
 				3F94DCF12177459000227227 /* SwipeUpInteractiveTransition.swift in Sources */,
+				3F62607D2179BC5A008E0F6C /* HeaderView.swift in Sources */,
+				3F6260812179E262008E0F6C /* EditHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,21 @@
+//
+//  FootView.swift
+//  MyRecord
+//
+//  Created by hao on 2018/10/19.
+//  Copyright © 2018年 gaorhao. All rights reserved.
+//
+
+import UIKit
+
+class FootView: UIView {
+
+    /*
+    // Only override draw() if you perform custom drawing.
+    // An empty implementation adversely affects performance during animation.
+    override func draw(_ rect: CGRect) {
+        // Drawing code
+    }
+    */
+
+}
