@@ -9,33 +9,46 @@
 import UIKit
 import AudioToolbox
 
+
+protocol EditHeaderViewDelegate {
+    func textFieldDidEndEditing()
+}
+
 class EditHeaderView: HeaderView {
-    override func willMove(toSuperview newSuperview: UIView?) {
-        super.willMove(toSuperview: newSuperview)
-        addObserver(self, forKeyPath: "state", options: [.new, .old], context: nil)
-    }
+    var pullingDidEnd: (() -> Void)?
     
-    deinit {
-        removeObserver(self, forKeyPath: "state")
-    }
-    
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
-        if let keypath = keyPath {
-            if keypath.isEqual("state") {
-                if let state = change?[NSKeyValueChangeKey.newKey] as? state {
-                    switch state {
-                    case .Showing:
-                        AudioServicesPlaySystemSound(1519)
-                        
-                        NotificationCenter.default.post(name: .headerViewDidShowingNotification, object: nil, userInfo: nil)
-                        break
-                    case .Hide:
-                        break
-                    }
+    override var state: state {
+        willSet {
+            if self.state != newValue {
+                switch newValue {
+                case .Showing:
+                    AudioServicesPlaySystemSound(1519)
+                    break
+                case .Hide:
+                    self.pullingDidEnd?();
+                    break
                 }
             }
         }
     }
     
+    var titleLabel: UILabel!
+    let tfHeight: CGFloat = 40
+    var delegate: EditHeaderViewDelegate?
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        let titleLabel = UILabel(frame: CGRect(x: 20, y: self.height - tfHeight, width: self.width, height: tfHeight))
+        titleLabel.text = "下拉添加"
+        self.addSubview(titleLabel)
+        self.titleLabel = titleLabel
+        let line = UIView(frame: CGRect(x: 20, y: titleLabel.frame.maxY, width: titleLabel.frame.width, height:  1 / UIScreen.main.scale))
+        line.backgroundColor = UIColor.black
+        self.addSubview(line)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }

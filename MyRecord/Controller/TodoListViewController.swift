@@ -44,17 +44,11 @@ class TodoListViewController: UIViewController {
         view.addSubview(tableView);
         
         let headerView = EditHeaderView(frame: CGRect(x: 0, y: -100, width: view.width, height: 80))
-        headerView.backgroundColor = UIColor.orange
         tableView.headerView = headerView
-//        let textField = UITextField(frame: CGRect(x: 0, y: 0, width: headerView.width, height: 70))
-//        textField.delegate = self
-//        headerView.addSubview(textField)
-//        let line = UIView(frame: CGRect(x: 20, y: textField.frame.maxY, width: textField.frame.width, height:  1 / UIScreen.main.scale))
-//        line.backgroundColor = UIColor.black
-//        headerView.addSubview(line)
-        
-//        let bottomView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.width, height: 80))
-        
+        headerView.pullingDidEnd = {
+            let addVC = AddTodoViewController()
+            self.navigationController?.pushViewController(addVC, animated: false)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -125,20 +119,6 @@ extension TodoListViewController: UITableViewDelegate, UITableViewDataSource {
         let configuration = UISwipeActionsConfiguration(actions: [unread])
         return configuration
     }
-    
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        if scrollView == tableView {
-//            if scrollView.contentOffset.y < -150 {
-//                AudioServicesPlaySystemSound(1519)
-//                tableView.contentInset = UIEdgeInsets(top: 80, left: 0, bottom: 0, right: 0)
-//                tableView.setContentOffset(CGPoint(x: 0, y: -100), animated: false)
-//            }
-//        }
-//    }
-    
-}
-
-extension TodoListViewController: UITextFieldDelegate {
     
 }
 

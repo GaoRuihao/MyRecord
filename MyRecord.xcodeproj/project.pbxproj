@@ -31,6 +31,7 @@
 		3F94DCF52177461300227227 /* AddRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F94DCF42177461300227227 /* AddRecordViewController.swift */; };
 		3F94DCF72177461A00227227 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F94DCF62177461A00227227 /* BaseViewController.swift */; };
 		3F94DCF92177518C00227227 /* Sources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F94DCF82177518C00227227 /* Sources.xcassets */; };
+		3FDA0201217DA38600B6D383 /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA0200217DA38600B6D383 /* AddTodoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		3F94DCF42177461300227227 /* AddRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecordViewController.swift; sourceTree = "<group>"; };
 		3F94DCF62177461A00227227 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3F94DCF82177518C00227227 /* Sources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sources.xcassets; sourceTree = "<group>"; };
+		3FDA0200217DA38600B6D383 /* AddTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
 		4ED129F502A9B7E5735BA849 /* Pods-MyRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyRecord/Pods-MyRecord.release.xcconfig"; sourceTree = "<group>"; };
 		D92544C17F239D34ED7DB399 /* libPods-MyRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyRecord.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,8 +84,8 @@
 			children = (
 				3F62607621789595008E0F6C /* RecordTableViewCell.swift */,
 				3F62607A2179BC23008E0F6C /* UIScrollView+Refresh.swift */,
-				3F62607C2179BC5A008E0F6C /* HeaderView.swift */,
 				3F62607E2179BC65008E0F6C /* FootView.swift */,
+				3F62607C2179BC5A008E0F6C /* HeaderView.swift */,
 				3F6260802179E262008E0F6C /* EditHeaderView.swift */,
 			);
 			path = View;
@@ -163,6 +165,7 @@
 				3F62607121788B3E008E0F6C /* CalendarViewController.swift */,
 				3F626073217890DE008E0F6C /* NavigationController+addition.swift */,
 				3F6260782178B60A008E0F6C /* TodoListViewController.swift */,
+				3FDA0200217DA38600B6D383 /* AddTodoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				3F62607221788B3E008E0F6C /* CalendarViewController.swift in Sources */,
 				3F62607B2179BC23008E0F6C /* UIScrollView+Refresh.swift in Sources */,
 				3F62607721789595008E0F6C /* RecordTableViewCell.swift in Sources */,
+				3FDA0201217DA38600B6D383 /* AddTodoViewController.swift in Sources */,
 				3F94DCF22177459000227227 /* NormalDismissAnimation.swift in Sources */,
 				3F94DCF72177461A00227227 /* BaseViewController.swift in Sources */,
 				3F626074217890DE008E0F6C /* NavigationController+addition.swift in Sources */,
